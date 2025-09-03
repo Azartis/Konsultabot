@@ -146,3 +146,61 @@
 2025-09-03 15:36:38,745 - WARNING - pyttsx3 not available - text-to-speech disabled
 2025-09-03 15:36:38,984 - INFO - Session loaded for user: Kaloy Cabaobao
 2025-09-03 15:37:35,651 - INFO - Application shutdown
+2025-09-03 16:32:37,370 - INFO - Starting Modern Konsultabot...
+2025-09-03 16:32:37,516 - WARNING - Google AI not available - using offline responses only
+2025-09-03 16:32:38,362 - WARNING - pyttsx3 not available - text-to-speech disabled
+2025-09-03 16:32:39,225 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 16:32:40,235 - INFO - Microphone calibrated successfully
+2025-09-03 16:32:40,537 - INFO - Session loaded for user: Kaloy Cabaobao
+2025-09-03 16:33:39,430 - INFO - Application shutdown
+2025-09-03 16:43:07,910 - INFO - Starting Modern Konsultabot...
+2025-09-03 16:43:08,037 - WARNING - Google AI not available - using offline responses only
+2025-09-03 16:43:08,973 - INFO - Imported existing <module 'comtypes.gen' from 'c:\\Users\\Ace Ziegfred Culapas\\CascadeProjects\\Project\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-03 16:43:08,974 - INFO - Using writeable comtypes cache directory: 'c:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\.venv\Lib\site-packages\comtypes\gen'
+2025-09-03 16:43:09,848 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 16:43:10,857 - INFO - Microphone calibrated successfully
+2025-09-03 16:43:10,957 - ERROR - Application startup error: cannot access local variable 'VOICE_FEATURES_AVAILABLE' where it is not associated with a value
+2025-09-03 16:43:10,975 - INFO - Application shutdown
+2025-09-03 16:43:51,907 - INFO - Starting Modern Konsultabot...
+2025-09-03 16:43:51,981 - WARNING - Google AI not available - using offline responses only
+2025-09-03 16:43:52,823 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Ace Ziegfred Culapas\\CascadeProjects\\Project\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-03 16:43:52,823 - INFO - Using writeable comtypes cache directory: 'C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\.venv\Lib\site-packages\comtypes\gen'
+2025-09-03 16:43:53,638 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 16:43:54,645 - INFO - Microphone calibrated successfully
+2025-09-03 16:43:54,755 - ERROR - Application startup error: cannot access local variable 'VOICE_FEATURES_AVAILABLE' where it is not associated with a value
+2025-09-03 16:43:54,766 - INFO - Application shutdown
+2025-09-03 16:44:16,242 - INFO - Starting Modern Konsultabot...
+2025-09-03 16:44:16,306 - WARNING - Google AI not available - using offline responses only
+2025-09-03 16:44:17,276 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Ace Ziegfred Culapas\\CascadeProjects\\Project\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-03 16:44:17,277 - INFO - Using writeable comtypes cache directory: 'C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\.venv\Lib\site-packages\comtypes\gen'
+2025-09-03 16:44:18,219 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 16:44:19,226 - INFO - Microphone calibrated successfully
+2025-09-03 16:44:19,319 - ERROR - Application startup error: cannot access local variable 'VOICE_FEATURES_AVAILABLE' where it is not associated with a value
+2025-09-03 16:44:19,337 - INFO - Application shutdown
+2025-09-03 16:47:26,268 - INFO - Starting Modern Konsultabot...
+2025-09-03 16:47:26,463 - WARNING - Google AI not available - using offline responses only
+2025-09-03 16:47:27,608 - INFO - Imported existing <module 'comtypes.gen' from 'c:\\Users\\Ace Ziegfred Culapas\\CascadeProjects\\Project\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-03 16:47:27,610 - INFO - Using writeable comtypes cache directory: 'c:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\.venv\Lib\site-packages\comtypes\gen'
+2025-09-03 16:47:28,615 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 16:47:29,622 - INFO - Microphone calibrated successfully
+2025-09-03 16:47:30,944 - INFO - Voice components initialized successfully
+2025-09-03 16:47:31,170 - INFO - Session loaded for user: Kaloy Cabaobao
+2025-09-03 16:48:54,400 - INFO - Application shutdown
+2025-09-03 16:49:01,629 - INFO - Starting Modern Konsultabot...
+2025-09-03 16:49:01,696 - WARNING - Google AI not available - using offline responses only
+2025-09-03 16:49:02,544 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Ace Ziegfred Culapas\\CascadeProjects\\Project\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-03 16:49:02,545 - INFO - Using writeable comtypes cache directory: 'C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\.venv\Lib\site-packages\comtypes\gen'
+2025-09-03 16:49:03,402 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 16:49:04,410 - INFO - Microphone calibrated successfully
+2025-09-03 16:49:05,690 - INFO - Voice components initialized successfully
+2025-09-03 16:49:05,894 - INFO - Session loaded for user: Kaloy Cabaobao
+2025-09-03 16:50:11,800 - INFO - Application shutdown
+2025-09-03 16:52:56,568 - INFO - Starting Modern Konsultabot...
+2025-09-03 16:52:56,639 - WARNING - Google AI not available - using offline responses only
+2025-09-03 16:52:57,483 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Ace Ziegfred Culapas\\CascadeProjects\\Project\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-03 16:52:57,484 - INFO - Using writeable comtypes cache directory: 'C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\.venv\Lib\site-packages\comtypes\gen'
+2025-09-03 16:52:58,333 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 16:52:59,341 - INFO - Microphone calibrated successfully
+2025-09-03 16:53:00,590 - INFO - Voice components initialized successfully
+2025-09-03 16:53:00,783 - INFO - Session loaded for user: Kaloy Cabaobao
+2025-09-03 16:55:25,181 - INFO - Application shutdown

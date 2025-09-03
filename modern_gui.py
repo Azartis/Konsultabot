@@ -10,6 +10,7 @@ import logging
 from datetime import datetime
 import json
 import os
+import math
 from database import DatabaseManager
 from config import Config
 
@@ -33,6 +34,16 @@ try:
 except ImportError:
     VOICE_HANDLER_AVAILABLE = False
 
+# Voice and TTS imports
+try:
+    import speech_recognition as sr
+    import pyttsx3
+    import pyaudio
+    VOICE_FEATURES_AVAILABLE = True
+except ImportError:
+    VOICE_FEATURES_AVAILABLE = False
+    logging.warning("Voice features not available - install speech_recognition, pyttsx3, pyaudio")
+
 class ModernKonsultabotGUI:
     def __init__(self):
         self.config = Config()
@@ -45,6 +56,9 @@ class ModernKonsultabotGUI:
         # Initialize AI components
         self.setup_ai_components()
         
+        # Initialize voice components
+        self.setup_voice_components()
+        
         # Setup GUI
         self.setup_main_window()
         
@@ -53,6 +67,57 @@ class ModernKonsultabotGUI:
             self.show_chat_interface()
         else:
             self.show_login_screen()
+    
+    def setup_voice_components(self):
+        """Initialize voice recognition and text-to-speech"""
+        self.is_listening = False
+        self.voice_animation_active = False
+        self.animation_frame = 0
+        self.jarvis_overlay = None
+        self.jarvis_canvas = None
+        self.current_voice_text = ""
+        self.voice_available = VOICE_FEATURES_AVAILABLE
+        
+        if self.voice_available:
+            try:
+                # Initialize speech recognition
+                self.recognizer = sr.Recognizer()
+                self.microphone = sr.Microphone()
+                
+                # Initialize text-to-speech
+                self.tts_engine = pyttsx3.init()
+                
+                # Configure TTS voice (try to get a more natural voice)
+                voices = self.tts_engine.getProperty('voices')
+                if voices:
+                    # Try to find a female voice for more pleasant interaction
+                    for voice in voices:
+                        if 'female' in voice.name.lower() or 'zira' in voice.name.lower():
+                            self.tts_engine.setProperty('voice', voice.id)
+                            break
+                    else:
+                        # Use first available voice
+                        self.tts_engine.setProperty('voice', voices[0].id)
+                
+                # Set speech rate and volume
+                self.tts_engine.setProperty('rate', 180)  # Speed of speech
+                self.tts_engine.setProperty('volume', 0.9)  # Volume level
+                
+                # Calibrate microphone for ambient noise
+                with self.microphone as source:
+                    self.recognizer.adjust_for_ambient_noise(source, duration=0.5)
+                    
+                logging.info("Voice components initialized successfully")
+                
+            except Exception as e:
+                logging.error(f"Failed to initialize voice components: {e}")
+                # Don't modify global variable here - just set instance variables
+                self.voice_available = False
+        else:
+            self.recognizer = None
+            self.microphone = None
+            self.tts_engine = None
+            self.voice_available = False
     
     def setup_ai_components(self):
         """Initialize AI and language processing components"""
@@ -99,6 +164,10 @@ class ModernKonsultabotGUI:
         # Animation variables
         self.is_listening = False
         self.animation_frame = 0
+        self.jarvis_canvas = None
+        self.jarvis_circles = []
+        self.jarvis_lines = []
+        self.voice_animation_active = False
         
         # Configure styles for futuristic theme
         self.style = ttk.Style()
@@ -545,14 +614,21 @@ class ModernKonsultabotGUI:
         send_btn.pack(side=tk.RIGHT, padx=(5, 3))
         
         # Voice button with animation capability - mobile optimized
-        self.voice_btn = tk.Button(input_panel, text="🎤", 
-                                  command=self.voice_input,
+        voice_text = "🎤" if self.voice_available else "🎤❌"
+        self.voice_btn = tk.Button(input_panel, text=voice_text, 
+                                  command=self.toggle_voice_input,
                                   font=('Consolas', 11),
                                   fg=self.text_color, bg=self.panel_color,
                                   activeforeground=self.primary_color,
                                   bd=1, relief='solid',
-                                  cursor='hand2')
+                                  cursor='hand2' if self.voice_available else 'not-allowed')
         self.voice_btn.pack(side=tk.RIGHT, padx=(0, 3))
+        
+        if not self.voice_available:
+            self.voice_btn.config(state='disabled')
+        
+        # Jarvis-like voice animation canvas (initially hidden)
+        self.create_jarvis_animation_canvas(main_frame)
         
         # Bind Enter key to send message
         self.message_entry.bind('<Return>', lambda e: self.send_message())
@@ -592,6 +668,10 @@ class ModernKonsultabotGUI:
             
             # Display response in main thread
             self.root.after(0, lambda: self.display_message("Konsultabot", response, "bot"))
+            
+            # Speak the response if TTS is available
+            if self.voice_available and self.tts_engine:
+                self.speak_response(response)
             
         except Exception as e:
             logging.error(f"Error getting bot response: {e}")
@@ -812,17 +892,130 @@ class ModernKonsultabotGUI:
         
         return f"{starter}{base_answer}{ender}"
     
+    def toggle_voice_input(self):
+        """Toggle voice input on/off"""
+        if not self.voice_available:
+            messagebox.showwarning("Voice Not Available", 
+                                 "Voice features require: pip install speechrecognition pyttsx3 pyaudio")
+            return
+        
+        if self.is_listening:
+            self.stop_voice_input()
+        else:
+            self.start_voice_input()
+    
+    def start_voice_input(self):
+        """Start voice input with Jarvis animation"""
+        if not self.voice_available:
+            return
+            
+        self.is_listening = True
+        self.current_voice_text = ""
+        
+        # Start Jarvis animation
+        self.start_listening_animation()
+        
+        # Update button appearance
+        self.voice_btn.config(text="🔴", fg=self.accent_color)
+        
+        # Start voice recognition in separate thread
+        threading.Thread(target=self.listen_for_voice, daemon=True).start()
+    
+    def stop_voice_input(self):
+        """Stop voice input and animation"""
+        self.is_listening = False
+        
+        # Stop animation
+        self.stop_listening_animation()
+        
+        # Reset button appearance
+        self.voice_btn.config(text="🎤", fg=self.text_color)
+    
+    def listen_for_voice(self):
+        """Listen for voice input and convert to text"""
+        try:
+            with self.microphone as source:
+                # Show calibrating status
+                self.root.after(0, lambda: self.display_message("System", "🎤 Calibrating audio... Speak now!", "system"))
+                
+                # Listen for audio with timeout
+                audio = self.recognizer.listen(source, timeout=10, phrase_time_limit=30)
+                
+                # Show processing status
+                self.root.after(0, lambda: self.display_message("System", "🔄 Processing speech...", "system"))
+                
+                # Convert speech to text
+                try:
+                    text = self.recognizer.recognize_google(audio)
+                    
+                    # Display the recognized text
+                    self.root.after(0, lambda: self.message_entry.insert(0, text))
+                    self.root.after(0, lambda: self.display_message("You (Voice)", text, "user"))
+                    
+                    # Automatically send the message
+                    self.root.after(100, lambda: self.send_voice_message(text))
+                    
+                except sr.UnknownValueError:
+                    self.root.after(0, lambda: self.display_message("System", "❌ Could not understand audio. Please try again.", "system"))
+                except sr.RequestError as e:
+                    self.root.after(0, lambda: self.display_message("System", f"❌ Speech recognition error: {e}", "system"))
+                    
+        except sr.WaitTimeoutError:
+            self.root.after(0, lambda: self.display_message("System", "⏱️ Voice input timed out. Click microphone to try again.", "system"))
+        except Exception as e:
+            logging.error(f"Voice input error: {e}")
+            self.root.after(0, lambda: self.display_message("System", f"❌ Voice input error: {e}", "system"))
+        finally:
+            # Always stop listening animation
+            self.root.after(0, self.stop_voice_input)
+    
+    def send_voice_message(self, text):
+        """Send voice message and get response"""
+        # Clear the entry field
+        self.message_entry.delete(0, tk.END)
+        
+        # Get response in separate thread
+        threading.Thread(target=self.get_bot_response, args=(text,), daemon=True).start()
+    
+    def speak_response(self, text):
+        """Convert text response to speech"""
+        if not self.voice_available or not self.tts_engine:
+            return
+            
+        try:
+            # Clean text for better speech (remove special characters)
+            clean_text = text.replace("◤", "").replace("◥", "").replace("►", "").replace("◉", "").replace("◯", "")
+            clean_text = clean_text.replace("[", "").replace("]", "").replace("»", "")
+            
+            # Speak in separate thread to avoid blocking UI
+            def speak():
+                try:
+                    self.tts_engine.say(clean_text)
+                    self.tts_engine.runAndWait()
+                except Exception as e:
+                    logging.error(f"TTS error: {e}")
+            
+            threading.Thread(target=speak, daemon=True).start()
+            
+        except Exception as e:
+            logging.error(f"Speech synthesis error: {e}")
+    
     def start_listening_animation(self):
         """Start Jarvis-like listening animation"""
         self.is_listening = True
+        self.voice_animation_active = True
         self.animation_frame = 0
+        self.show_jarvis_animation()
         self.animate_voice_button()
+        self.animate_jarvis_interface()
     
     def stop_listening_animation(self):
         """Stop listening animation"""
         self.is_listening = False
+        self.voice_animation_active = False
         if hasattr(self, 'voice_btn'):
             self.voice_btn.config(bg=self.panel_color, fg=self.text_color)
+        self.hide_jarvis_animation()
     
     def animate_voice_button(self):
         """Animate voice button with pulsing effect"""
@@ -845,7 +1038,195 @@ class ModernKonsultabotGUI:
         
         # Schedule next frame
         if self.is_listening:
-            self.root.after(200, self.animate_voice_button)
+            self.root.after(150, self.animate_voice_button)
+    
+    def create_jarvis_animation_canvas(self, parent):
+        """Create Jarvis-like animation canvas overlay"""
+        # Create overlay frame for animation
+        self.jarvis_overlay = tk.Frame(parent, bg=self.bg_color)
+        
+        # Create canvas for Jarvis animation
+        self.jarvis_canvas = tk.Canvas(
+            self.jarvis_overlay,
+            width=350,
+            height=350,
+            bg=self.bg_color,
+            highlightthickness=0,
+            bd=0
+        )
+        self.jarvis_canvas.pack(expand=True)
+        
+        # Initially hide the overlay
+        self.jarvis_overlay.place_forget()
+    
+    def show_jarvis_animation(self):
+        """Show Jarvis animation overlay"""
+        if self.jarvis_overlay:
+            # Position overlay in center of window
+            self.jarvis_overlay.place(
+                relx=0.5, rely=0.4, 
+                anchor='center',
+                width=350, height=350
+            )
+            self.jarvis_overlay.lift()  # Bring to front
+    
+    def hide_jarvis_animation(self):
+        """Hide Jarvis animation overlay"""
+        if self.jarvis_overlay:
+            self.jarvis_overlay.place_forget()
+            # Clear canvas
+            if self.jarvis_canvas:
+                self.jarvis_canvas.delete("all")
+    
+    def animate_jarvis_interface(self):
+        """Animate Jarvis-like circular interface with sound waves"""
+        if not self.voice_animation_active or not self.jarvis_canvas:
+            return
+        
+        # Clear previous frame
+        self.jarvis_canvas.delete("all")
+        
+        # Canvas dimensions
+        width = 350
+        height = 350
+        center_x = width // 2
+        center_y = height // 2
+        
+        # Animation parameters
+        frame = self.animation_frame
+        
+        # Main central circle (pulsing)
+        base_radius = 30
+        pulse = 10 * abs(math.sin(frame * 0.3))
+        main_radius = base_radius + pulse
+        
+        # Draw main central circle
+        self.jarvis_canvas.create_oval(
+            center_x - main_radius, center_y - main_radius,
+            center_x + main_radius, center_y + main_radius,
+            outline=self.primary_color,
+            width=3,
+            fill='',
+            tags="main_circle"
+        )
+        
+        # Inner glow circle
+        inner_radius = main_radius - 8
+        self.jarvis_canvas.create_oval(
+            center_x - inner_radius, center_y - inner_radius,
+            center_x + inner_radius, center_y + inner_radius,
+            outline=self.glow_color,
+            width=1,
+            fill='',
+            tags="inner_glow"
+        )
+        
+        # Outer ripple circles
+        for i in range(3):
+            ripple_radius = main_radius + 20 + (i * 25) + (frame * 2) % 50
+            alpha_factor = max(0, 1 - (ripple_radius - main_radius) / 100)
+            
+            if ripple_radius < 150:  # Only draw if within canvas
+                self.jarvis_canvas.create_oval(
+                    center_x - ripple_radius, center_y - ripple_radius,
+                    center_x + ripple_radius, center_y + ripple_radius,
+                    outline=self.secondary_color,
+                    width=max(1, int(3 * alpha_factor)),
+                    fill='',
+                    tags=f"ripple_{i}"
+                )
+        
+        # Sound wave lines (simulating audio visualization)
+        num_lines = 16
+        for i in range(num_lines):
+            angle = (i * 360 / num_lines) + (frame * 5)
+            angle_rad = math.radians(angle)
+            
+            # Simulate sound wave amplitude
+            base_length = 60
+            wave_amplitude = 20 * abs(math.sin(frame * 0.2 + i * 0.5))
+            line_length = base_length + wave_amplitude
+            
+            # Calculate line positions
+            start_x = center_x + (main_radius + 10) * math.cos(angle_rad)
+            start_y = center_y + (main_radius + 10) * math.sin(angle_rad)
+            end_x = center_x + (main_radius + 10 + line_length) * math.cos(angle_rad)
+            end_y = center_y + (main_radius + 10 + line_length) * math.sin(angle_rad)
+            
+            # Color based on amplitude
+            if wave_amplitude > 15:
+                line_color = self.accent_color
+                line_width = 3
+            elif wave_amplitude > 10:
+                line_color = self.primary_color
+                line_width = 2
+            else:
+                line_color = self.secondary_color
+                line_width = 1
+            
+            self.jarvis_canvas.create_line(
+                start_x, start_y, end_x, end_y,
+                fill=line_color,
+                width=line_width,
+                tags=f"wave_line_{i}"
+            )
+        
+        # Rotating arc segments (Jarvis-style)
+        for i in range(4):
+            arc_start = (frame * 3 + i * 90) % 360
+            arc_extent = 60
+            arc_radius = main_radius + 40
+            
+            self.jarvis_canvas.create_arc(
+                center_x - arc_radius, center_y - arc_radius,
+                center_x + arc_radius, center_y + arc_radius,
+                start=arc_start,
+                extent=arc_extent,
+                outline=self.glow_color,
+                width=2,
+                style='arc',
+                tags=f"rotating_arc_{i}"
+            )
+        
+        # Central status text
+        status_texts = [
+            "LISTENING",
+            "PROCESSING",
+            "ANALYZING",
+            "READY"
+        ]
+        status_index = (frame // 10) % len(status_texts)
+        
+        self.jarvis_canvas.create_text(
+            center_x, center_y,
+            text=status_texts[status_index],
+            fill=self.primary_color,
+            font=('Orbitron', 10, 'bold'),
+            tags="status_text"
+        )
+        
+        # Small dots around the main circle
+        for i in range(8):
+            dot_angle = (frame * 2 + i * 45) % 360
+            dot_angle_rad = math.radians(dot_angle)
+            dot_radius = main_radius + 15
+            
+            dot_x = center_x + dot_radius * math.cos(dot_angle_rad)
+            dot_y = center_y + dot_radius * math.sin(dot_angle_rad)
+            
+            dot_size = 3 + 2 * abs(math.sin(frame * 0.1 + i))
+            
+            self.jarvis_canvas.create_oval(
+                dot_x - dot_size, dot_y - dot_size,
+                dot_x + dot_size, dot_y + dot_size,
+                fill=self.accent_color,
+                outline='',
+                tags=f"dot_{i}"
+            )
+        
+        # Schedule next animation frame
+        if self.voice_animation_active:
+            self.root.after(50, self.animate_jarvis_interface)
     
     def logout(self):
         """Logout user and return to login screen"""

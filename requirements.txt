@@ -1,7 +1,6 @@
 # Konsultabot - AI Chatbot for EVSU DULAG
 # Core Dependencies
-tkinter==8.6  # GUI framework (usually built-in with Python)
-sqlite3  # Database (built-in with Python)
+
 
 # AI and NLP
 google-generativeai==0.3.2  # Google AI Studio API
@@ -38,3 +37,4 @@ langdetect==1.0.9  # Language detection
 
 # Filipino Language Support
 polyglot==16.7.4  # Multi-language support
+    

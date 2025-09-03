@@ -92,8 +92,13 @@ class ModernKonsultabotGUI:
         """Setup the main application window with futuristic Jarvis-like design"""
         self.root = tk.Tk()
         self.root.title("KONSULTABOT - EVSU DULAG CAMPUS AI ASSISTANT")
-        self.root.geometry("1200x900")
+        self.root.geometry("400x700")  # Mobile-friendly dimensions
         self.root.configure(bg='#0a0a0a')
+        self.root.resizable(True, True)  # Allow resizing for different screen sizes
+        
+        # Animation variables
+        self.is_listening = False
+        self.animation_frame = 0
         
         # Configure styles for futuristic theme
         self.style = ttk.Style()
@@ -421,140 +426,146 @@ class ModernKonsultabotGUI:
             messagebox.showerror("Error", f"Registration failed: {str(e)}")
     
     def show_chat_interface(self):
-        """Display the futuristic chat interface"""
+        """Display the futuristic mobile-optimized chat interface"""
         # Clear window
         for widget in self.root.winfo_children():
             widget.destroy()
         
-        # Main container with dark theme
+        # Main container with dark theme - mobile optimized
         main_frame = tk.Frame(self.root, bg=self.bg_color)
-        main_frame.pack(fill=tk.BOTH, expand=True)
+        main_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         
-        # Create grid background
-        # self.create_grid_background(main_frame)  # Commented out for now
-        
-        # Header panel
+        # Header panel - compact for mobile
         header_panel = tk.Frame(main_frame, bg=self.panel_color, 
                                highlightbackground=self.primary_color, 
                                highlightthickness=1)
-        header_panel.pack(fill=tk.X, padx=10, pady=(10, 5))
+        header_panel.pack(fill=tk.X, pady=(0, 5))
         
-        # Left side - User info
-        left_header = tk.Frame(header_panel, bg=self.panel_color)
-        left_header.pack(side=tk.LEFT, padx=15, pady=10)
+        # Mobile-optimized header layout
+        # Top row - User info
+        user_row = tk.Frame(header_panel, bg=self.panel_color)
+        user_row.pack(fill=tk.X, padx=10, pady=(5, 0))
         
-        welcome_text = f"◤ USER: {self.current_user['name'].upper()} ◥"
-        welcome_label = tk.Label(left_header, text=welcome_text, 
-                                font=('Orbitron', 12, 'bold'), 
+        welcome_text = f"◤ {self.current_user['name'].upper()} ◥"
+        welcome_label = tk.Label(user_row, text=welcome_text, 
+                                font=('Orbitron', 10, 'bold'), 
                                 fg=self.primary_color, bg=self.panel_color)
-        welcome_label.pack()
+        welcome_label.pack(side=tk.LEFT)
         
-        # Right side - Status and controls
-        right_header = tk.Frame(header_panel, bg=self.panel_color)
-        right_header.pack(side=tk.RIGHT, padx=15, pady=10)
+        # Bottom row - Status and controls
+        control_row = tk.Frame(header_panel, bg=self.panel_color)
+        control_row.pack(fill=tk.X, padx=10, pady=(0, 5))
         
         # Status indicator with futuristic styling
         status_text = "◉ ONLINE" if self.online_mode else "◯ OFFLINE"
         status_color = self.accent_color if self.online_mode else "#ff4444"
-        self.status_label = tk.Label(right_header, text=status_text, 
-                                    font=('Consolas', 10, 'bold'), 
+        self.status_label = tk.Label(control_row, text=status_text, 
+                                    font=('Consolas', 9, 'bold'), 
                                     fg=status_color, bg=self.panel_color)
-        self.status_label.pack(side=tk.RIGHT, padx=(10, 0))
+        self.status_label.pack(side=tk.LEFT)
         
-        # Control buttons
-        toggle_btn = tk.Button(right_header, text="[TOGGLE]", 
+        # Control buttons - mobile optimized
+        button_frame = tk.Frame(control_row, bg=self.panel_color)
+        button_frame.pack(side=tk.RIGHT)
+        
+        toggle_btn = tk.Button(button_frame, text="[TOGGLE]", 
                               command=self.toggle_online_mode,
-                              font=('Consolas', 9),
+                              font=('Consolas', 8),
                               fg=self.text_color, bg=self.panel_color,
                               activeforeground=self.primary_color,
                               bd=1, relief='solid',
                               cursor='hand2')
-        toggle_btn.pack(side=tk.RIGHT, padx=5)
+        toggle_btn.pack(side=tk.RIGHT, padx=2)
         
-        logout_btn = tk.Button(right_header, text="[EXIT]", 
+        logout_btn = tk.Button(button_frame, text="[EXIT]", 
                               command=self.logout,
-                              font=('Consolas', 9),
+                              font=('Consolas', 8),
                               fg=self.accent_color, bg=self.panel_color,
                               activeforeground='#ff6666',
                               bd=1, relief='solid',
                               cursor='hand2')
-        logout_btn.pack(side=tk.RIGHT, padx=5)
+        logout_btn.pack(side=tk.RIGHT, padx=2)
         
-        # Chat area with futuristic styling
+        # Chat area with futuristic styling - mobile optimized
         chat_panel = tk.Frame(main_frame, bg=self.panel_color,
                              highlightbackground=self.primary_color,
                              highlightthickness=1)
-        chat_panel.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
+        chat_panel.pack(fill=tk.BOTH, expand=True, pady=5)
         
-        # Chat display with terminal-like appearance
+        # Chat display with terminal-like appearance - mobile optimized
         self.chat_display = scrolledtext.ScrolledText(
             chat_panel, 
             wrap=tk.WORD, 
             state=tk.DISABLED,
-            font=('Consolas', 11),
+            font=('Consolas', 10),  # Smaller font for mobile
             bg='#0d1117',
             fg=self.text_color,
             insertbackground=self.primary_color,
             selectbackground=self.secondary_color,
             bd=0
         )
-        self.chat_display.pack(fill=tk.BOTH, expand=True, padx=5, pady=(5, 0))
+        self.chat_display.pack(fill=tk.BOTH, expand=True, padx=3, pady=(3, 0))
         
-        # Configure text tags for futuristic styling
-        self.chat_display.tag_configure("user", foreground=self.primary_color, font=('Consolas', 11, 'bold'))
-        self.chat_display.tag_configure("bot", foreground=self.accent_color, font=('Consolas', 11, 'bold'))
-        self.chat_display.tag_configure("timestamp", foreground="#666666", font=('Consolas', 9))
-        self.chat_display.tag_configure("system", foreground=self.secondary_color, font=('Consolas', 10, 'italic'))
+        # Configure text tags for futuristic styling - mobile optimized
+        self.chat_display.tag_configure("user", foreground=self.primary_color, font=('Consolas', 10, 'bold'))
+        self.chat_display.tag_configure("bot", foreground=self.accent_color, font=('Consolas', 10, 'bold'))
+        self.chat_display.tag_configure("timestamp", foreground="#666666", font=('Consolas', 8))
+        self.chat_display.tag_configure("system", foreground=self.secondary_color, font=('Consolas', 9, 'italic'))
         
-        # Input panel
+        # Input panel - mobile optimized
         input_panel = tk.Frame(chat_panel, bg=self.panel_color)
-        input_panel.pack(fill=tk.X, padx=5, pady=5)
+        input_panel.pack(fill=tk.X, padx=3, pady=3)
         
-        # Input prompt
+        # Input prompt - smaller for mobile
         prompt_label = tk.Label(input_panel, text="►", 
-                               font=('Consolas', 14, 'bold'), 
+                               font=('Consolas', 12, 'bold'), 
                                fg=self.primary_color, bg=self.panel_color)
-        prompt_label.pack(side=tk.LEFT, padx=(5, 10))
+        prompt_label.pack(side=tk.LEFT, padx=(3, 5))
         
-        # Message input with terminal styling
+        # Message input with terminal styling - mobile optimized
         self.message_entry = tk.Entry(input_panel, 
-                                     font=('Consolas', 12), 
+                                     font=('Consolas', 11), 
                                      fg=self.text_color, 
                                      bg='#1a1a1a',
                                      insertbackground=self.primary_color,
                                      highlightbackground=self.primary_color,
                                      highlightthickness=1,
                                      bd=0)
-        self.message_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, ipady=8)
+        self.message_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, ipady=6)
         
-        # Send button with futuristic styling
+        # Send button with futuristic styling - mobile optimized
         send_btn = tk.Button(input_panel, text="◤SEND◥", 
                             command=self.send_message,
-                            font=('Orbitron', 10, 'bold'),
+                            font=('Orbitron', 9, 'bold'),
                             fg=self.bg_color, bg=self.primary_color,
                             activeforeground=self.bg_color,
                             activebackground=self.glow_color,
-                            bd=0, padx=15,
+                            bd=0, padx=8,
                             cursor='hand2')
-        send_btn.pack(side=tk.RIGHT, padx=(10, 5))
+        send_btn.pack(side=tk.RIGHT, padx=(5, 3))
         
-        # Voice button (if available)
-        if self.voice_handler:
-            voice_btn = tk.Button(input_panel, text="🎤", 
-                                 command=self.voice_input,
-                                 font=('Consolas', 12),
-                                 fg=self.text_color, bg=self.panel_color,
-                                 activeforeground=self.primary_color,
-                                 bd=1, relief='solid',
-                                 cursor='hand2')
-            voice_btn.pack(side=tk.RIGHT, padx=(0, 5))
+        # Voice button with animation capability - mobile optimized
+        self.voice_btn = tk.Button(input_panel, text="🎤", 
+                                  command=self.voice_input,
+                                  font=('Consolas', 11),
+                                  fg=self.text_color, bg=self.panel_color,
+                                  activeforeground=self.primary_color,
+                                  bd=1, relief='solid',
+                                  cursor='hand2')
+        self.voice_btn.pack(side=tk.RIGHT, padx=(0, 3))
         
         # Bind Enter key to send message
         self.message_entry.bind('<Return>', lambda e: self.send_message())
         self.message_entry.focus()
         
-        # Display futuristic welcome message
-        self.display_message("KONSULTABOT", "◤ SYSTEM INITIALIZED ◥\n\nGreetings, User. I am KONSULTABOT, your AI assistant for EVSU Dulag Campus operations.\n\n► How may I assist you today?", "bot")
+        # Display human-like welcome message
+        welcome_messages = [
+            "◤ SYSTEM INITIALIZED ◥\n\nHey there! I'm KONSULTABOT, your friendly AI companion for EVSU Dulag Campus. I'm genuinely excited to help you out today!\n\n► What's on your mind? Feel free to ask me anything about campus life, academics, or just chat!",
+            "◤ SYSTEM ONLINE ◥\n\nHello! Great to see you! I'm KONSULTABOT, and I'm here to make your EVSU Dulag experience smoother and more enjoyable.\n\n► How can I help you today? Don't hesitate to ask about anything!",
+            "◤ READY TO ASSIST ◥\n\nWelcome! I'm KONSULTABOT, your personal AI assistant for EVSU Dulag Campus. I love helping students and I'm always learning new things!\n\n► What would you like to know? I'm all ears!"
+        ]
+        import random
+        self.display_message("KONSULTABOT", random.choice(welcome_messages), "bot")
     
     def send_message(self):
         """Send user message and get response"""
@@ -610,39 +621,52 @@ class ModernKonsultabotGUI:
             return self.get_offline_response(user_message)
     
     def get_offline_response(self, user_message):
-        """Get response from local knowledge base"""
+        """Get human-like response from local knowledge base"""
         try:
             # Search knowledge base
             results = self.db.search_knowledge_base(user_message.lower())
             
             if results:
-                # Return best match
-                return results[0][1]  # Return answer from best match
+                # Return best match with human-like touch
+                base_answer = results[0][1]
+                return self.humanize_response(base_answer, user_message)
             else:
-                # Default responses for common queries
+                # Human-like responses for common queries
                 user_lower = user_message.lower()
                 
-                if any(word in user_lower for word in ['hello', 'hi', 'hey', 'good morning', 'good afternoon']):
-                    return "Hello! I'm Konsultabot, your AI assistant for EVSU Dulag campus. How can I help you today?"
+                if any(word in user_lower for word in ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'kumusta', 'maupay']):
+                    greetings = [
+                        "Hey there! Great to see you! I'm Konsultabot, and I'm here to help you with anything about EVSU Dulag campus. What's on your mind today?",
+                        "Hello! Nice to meet you! I'm your friendly campus AI assistant. I know quite a bit about EVSU Dulag - what would you like to know?",
+                        "Hi! Welcome! I'm Konsultabot, and I'm genuinely excited to help you navigate campus life at EVSU Dulag. How can I assist you today?"
+                    ]
+                    import random
+                    return random.choice(greetings)
                 
-                elif any(word in user_lower for word in ['enrollment', 'enroll', 'register']):
-                    return "For enrollment information, please visit the Registrar's office with your Form 138, NSO Birth Certificate, Good Moral Certificate, and 2x2 photos. You can also contact the campus directly for specific enrollment procedures."
+                elif any(word in user_lower for word in ['enrollment', 'enroll', 'register', 'admission']):
+                    return "Oh, looking to enroll? That's exciting! Here's what you'll need to do: First, head over to the Registrar's office with your Form 138, NSO Birth Certificate, Good Moral Certificate, and some 2x2 photos. The staff there are really helpful and will guide you through the process. If you have any specific questions about deadlines or requirements, I'd recommend calling the campus directly - they're always happy to help prospective students!"
                 
-                elif any(word in user_lower for word in ['courses', 'programs', 'degree']):
-                    return "EVSU Dulag offers various undergraduate programs including Education, Business, and Computer Science. For detailed course information, please contact the Academic Affairs office."
+                elif any(word in user_lower for word in ['courses', 'programs', 'degree', 'study']):
+                    return "Great question! EVSU Dulag has some really solid programs. We offer undergraduate degrees in Education, Business, and Computer Science. Each program has its own strengths - Education is perfect if you want to make a difference in students' lives, Business opens doors to entrepreneurship and management, and Computer Science is fantastic for tech careers. Want me to tell you more about any specific program?"
                 
-                elif any(word in user_lower for word in ['library', 'books', 'study']):
-                    return "The campus library provides study areas, computer access, and research materials. Library hours and services may vary, so please check with the librarian for current schedules."
+                elif any(word in user_lower for word in ['library', 'books', 'research']):
+                    return "The campus library is actually a great spot! It's got study areas where you can really focus, computers for research, and a good collection of books and materials. The librarians are super helpful too - they really know their stuff. Just keep in mind that hours might vary, so it's worth checking with them about current schedules. Perfect place to get some serious studying done!"
                 
-                elif any(word in user_lower for word in ['contact', 'phone', 'address', 'location']):
-                    return "EVSU Dulag Campus is located in Dulag, Leyte. For specific contact information and office hours, please visit the campus or check the official EVSU website."
+                elif any(word in user_lower for word in ['contact', 'phone', 'address', 'location', 'where']):
+                    return "EVSU Dulag Campus is located right in Dulag, Leyte - beautiful area! For specific contact details and office hours, your best bet is to visit the campus directly or check out the official EVSU website. The staff there are really approachable and always willing to help with any questions you might have."
+                
+                elif any(word in user_lower for word in ['thank', 'thanks', 'salamat']):
+                    return "You're very welcome! I'm always happy to help. If you need anything else about campus life, academics, or just want to chat about EVSU Dulag, don't hesitate to ask. That's what I'm here for!"
+                
+                elif any(word in user_lower for word in ['how are you', 'how do you feel']):
+                    return "I'm doing great, thanks for asking! I love helping students and prospective students learn about EVSU Dulag. There's always something interesting happening on campus. How are you doing today?"
                 
                 else:
-                    return "I'm sorry, I don't have specific information about that. Please contact the appropriate campus office for detailed assistance, or try rephrasing your question."
+                    return "Hmm, that's a really good question! I wish I had more specific information about that right now. Your best bet would be to reach out to the appropriate campus office - they'll have the most up-to-date and detailed info. Or feel free to rephrase your question - sometimes I understand things better when they're worded differently!"
                     
         except Exception as e:
             logging.error(f"Offline response error: {e}")
-            return "I'm experiencing technical difficulties. Please try again later or contact campus support."
+            return "Oops, I'm having a bit of a technical hiccup right now. Could you try asking again in a moment? If it keeps happening, you might want to contact campus support directly. Sorry about that!"
     
     def get_conversation_context(self):
         """Get recent conversation context for AI"""
@@ -703,17 +727,125 @@ class ModernKonsultabotGUI:
         self.display_message("SYSTEM", system_msg, "system")
     
     def voice_input(self):
-        """Handle voice input (if available)"""
-        if not self.voice_handler:
-            messagebox.showinfo("Info", "Voice input not available")
-            return
-        
+        """Handle voice input with Jarvis-like animation"""
+        if self.is_listening:
+            return  # Prevent multiple simultaneous recordings
+            
         try:
-            # This would integrate with voice_handler
-            messagebox.showinfo("Voice Input", "Voice input feature coming soon!")
+            # Start listening animation
+            self.start_listening_animation()
+            
+            # Import speech recognition
+            import speech_recognition as sr
+            
+            # Initialize recognizer
+            recognizer = sr.Recognizer()
+            
+            # Use microphone
+            with sr.Microphone() as source:
+                # Adjust for ambient noise
+                self.display_message("SYSTEM", "◤ CALIBRATING AUDIO ◥\n\n► Adjusting for background noise...", "system")
+                recognizer.adjust_for_ambient_noise(source, duration=1)
+                
+                # Start recording
+                self.display_message("SYSTEM", "◤ LISTENING ◥\n\n► Speak now...", "system")
+                
+                # Record audio with timeout
+                audio = recognizer.listen(source, timeout=10, phrase_time_limit=10)
+                
+            # Stop animation
+            self.stop_listening_animation()
+            
+            # Process audio
+            self.display_message("SYSTEM", "◤ PROCESSING AUDIO ◥\n\n► Analyzing speech...", "system")
+            
+            # Recognize speech
+            try:
+                # Use Google's speech recognition
+                text = recognizer.recognize_google(audio)
+                
+                # Display recognized text
+                self.display_message("YOU (VOICE)", text, "user")
+                
+                # Process the message
+                threading.Thread(target=self.get_bot_response, args=(text,), daemon=True).start()
+                
+            except sr.UnknownValueError:
+                self.display_message("SYSTEM", "◤ AUDIO ERROR ◥\n\n► Could not understand audio. Please try again.", "system")
+            except sr.RequestError as e:
+                self.display_message("SYSTEM", f"◤ SERVICE ERROR ◥\n\n► Speech recognition service error: {e}", "system")
+                
+        except ImportError:
+            messagebox.showerror("Error", "Speech recognition not available. Please install: pip install SpeechRecognition pyaudio")
         except Exception as e:
+            self.stop_listening_animation()
             logging.error(f"Voice input error: {e}")
-            messagebox.showerror("Error", "Voice input failed")
+            self.display_message("SYSTEM", f"◤ VOICE INPUT ERROR ◥\n\n► {str(e)}", "system")
+    
+    def humanize_response(self, base_answer, user_message):
+        """Add human-like elements to responses"""
+        import random
+        
+        # Add conversational starters
+        starters = [
+            "Great question! ",
+            "I'm glad you asked! ",
+            "That's interesting! ",
+            "Good point! ",
+            "Let me help you with that! ",
+            "I'd be happy to explain! ",
+            ""
+        ]
+        
+        # Add conversational endings
+        enders = [
+            " Hope that helps!",
+            " Let me know if you need more info!",
+            " Feel free to ask if you have more questions!",
+            " Does that answer your question?",
+            " Anything else you'd like to know?",
+            ""
+        ]
+        
+        starter = random.choice(starters)
+        ender = random.choice(enders)
+        
+        return f"{starter}{base_answer}{ender}"
+    
+    def start_listening_animation(self):
+        """Start Jarvis-like listening animation"""
+        self.is_listening = True
+        self.animation_frame = 0
+        self.animate_voice_button()
+    
+    def stop_listening_animation(self):
+        """Stop listening animation"""
+        self.is_listening = False
+        if hasattr(self, 'voice_btn'):
+            self.voice_btn.config(bg=self.panel_color, fg=self.text_color)
+    
+    def animate_voice_button(self):
+        """Animate voice button with pulsing effect"""
+        if not self.is_listening:
+            return
+            
+        # Create pulsing effect with different colors
+        colors = [self.primary_color, self.glow_color, self.secondary_color, self.accent_color]
+        bg_colors = [self.panel_color, '#2a2a2a', '#3a3a3a', '#2a2a2a']
+        
+        color_index = self.animation_frame % len(colors)
+        
+        if hasattr(self, 'voice_btn'):
+            self.voice_btn.config(
+                fg=colors[color_index],
+                bg=bg_colors[color_index]
+            )
+        
+        self.animation_frame += 1
+        
+        # Schedule next frame
+        if self.is_listening:
+            self.root.after(200, self.animate_voice_button)
     
     def logout(self):
         """Logout user and return to login screen"""

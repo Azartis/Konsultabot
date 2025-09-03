@@ -204,3 +204,12 @@
 2025-09-03 16:53:00,590 - INFO - Voice components initialized successfully
 2025-09-03 16:53:00,783 - INFO - Session loaded for user: Kaloy Cabaobao
 2025-09-03 16:55:25,181 - INFO - Application shutdown
+2025-09-03 19:18:25,363 - INFO - Starting Modern Konsultabot...
+2025-09-03 19:18:25,446 - WARNING - Google AI not available - using offline responses only
+2025-09-03 19:18:26,388 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Ace Ziegfred Culapas\\CascadeProjects\\Project\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-03 19:18:26,389 - INFO - Using writeable comtypes cache directory: 'C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\.venv\Lib\site-packages\comtypes\gen'
+2025-09-03 19:18:27,500 - INFO - Calibrating microphone for ambient noise...
+2025-09-03 19:18:28,509 - INFO - Microphone calibrated successfully
+2025-09-03 19:18:29,836 - INFO - Voice components initialized successfully
+2025-09-03 19:18:30,097 - INFO - Session loaded for user: Kaloy Cabaobao
+2025-09-03 19:43:01,597 - INFO - Application shutdown

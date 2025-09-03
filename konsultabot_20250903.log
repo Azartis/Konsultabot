@@ -1,0 +1,148 @@
+2025-09-03 12:56:58,470 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 12:56:58,475 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 12:56:58,475 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 12:56:58,482 - ERROR - Database initialization failed: unsupported file format
+2025-09-03 12:57:55,390 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 12:57:55,393 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 12:57:55,394 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 12:57:55,396 - ERROR - Database initialization failed: unsupported file format
+2025-09-03 12:58:00,857 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 12:58:00,861 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 12:58:00,862 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 12:58:00,865 - ERROR - Database initialization failed: unsupported file format
+2025-09-03 12:58:30,482 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 12:58:30,485 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 12:58:30,485 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 12:58:30,488 - ERROR - Database initialization failed: unsupported file format
+2025-09-03 13:00:43,468 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 13:00:43,473 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 13:00:43,474 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 13:00:43,546 - INFO - Database initialized successfully
+2025-09-03 13:04:03,498 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 13:04:03,500 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 13:04:03,500 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 13:04:03,506 - INFO - Database initialized successfully
+2025-09-03 13:04:05,876 - INFO - Application started successfully
+2025-09-03 13:05:17,969 - INFO - User registered successfully: Ace@evsu.edu.ph
+2025-09-03 13:05:42,014 - INFO - User logged in successfully: Ace@evsu.edu.ph
+2025-09-03 13:05:42,051 - WARNING - pyttsx3 not available - text-to-speech disabled
+2025-09-03 13:05:43,524 - ERROR - Login error: name 'datetime' is not defined
+2025-09-03 13:05:48,004 - INFO - User logged in successfully: Ace@evsu.edu.ph
+2025-09-03 13:05:48,025 - WARNING - pyttsx3 not available - text-to-speech disabled
+2025-09-03 13:05:48,065 - ERROR - Login error: name 'datetime' is not defined
+2025-09-03 13:06:06,126 - INFO - Application shutdown
+2025-09-03 13:15:05,074 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 13:15:05,076 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 13:15:05,077 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 13:15:05,084 - INFO - Database initialized successfully
+2025-09-03 13:15:22,912 - INFO - Application started successfully
+2025-09-03 13:15:41,320 - INFO - User logged in successfully: Ace@evsu.edu.ph
+2025-09-03 13:15:41,388 - WARNING - pyttsx3 not available - text-to-speech disabled
+2025-09-03 13:15:42,585 - ERROR - Login error: name 'datetime' is not defined
+2025-09-03 13:16:32,381 - INFO - Application shutdown
+2025-09-03 14:48:46,001 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 14:48:46,007 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 14:48:46,009 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 14:48:46,016 - INFO - Database initialized successfully
+2025-09-03 14:48:50,997 - ERROR - Application error: name 'DatabaseManager' is not defined
+2025-09-03 14:48:54,450 - INFO - Application shutdown
+2025-09-03 14:52:22,689 - INFO - Starting Konsultabot v2.0.0
+2025-09-03 14:52:22,692 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 14:52:22,693 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 14:52:22,693 - INFO - Database will be initialized by GUI
+2025-09-03 14:52:22,694 - INFO - API configuration will be handled by GUI
+2025-09-03 14:52:22,858 - ERROR - Application error: name 'DatabaseManager' is not defined
+2025-09-03 14:52:26,625 - INFO - Application shutdown
+2025-09-03 14:55:02,754 - INFO - Starting Konsultabot v2.0.0
+2025-09-03 14:55:02,757 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 14:55:02,758 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 14:55:02,759 - INFO - Database will be initialized by GUI
+2025-09-03 14:55:02,760 - INFO - API configuration will be handled by GUI
+2025-09-03 14:55:03,093 - INFO - Application started successfully
+2025-09-03 14:55:23,690 - ERROR - Login error: no such column: first_name
+2025-09-03 14:55:27,304 - ERROR - Login error: no such column: first_name
+2025-09-03 14:58:25,473 - INFO - Application interrupted by user
+2025-09-03 14:58:25,473 - INFO - Application shutdown
+2025-09-03 14:59:30,811 - INFO - Starting Konsultabot v2.0.0
+2025-09-03 14:59:30,813 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 14:59:30,814 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 14:59:30,814 - INFO - Database will be initialized by GUI
+2025-09-03 14:59:30,814 - INFO - API configuration will be handled by GUI
+2025-09-03 14:59:31,240 - INFO - Application started successfully
+2025-09-03 14:59:49,171 - ERROR - Login error: no such column: first_name
+2025-09-03 15:00:19,211 - INFO - Application interrupted by user
+2025-09-03 15:00:19,212 - INFO - Application shutdown
+2025-09-03 15:00:57,817 - INFO - Starting Konsultabot v2.0.0
+2025-09-03 15:00:57,830 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 15:00:57,833 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 15:00:57,837 - INFO - Database will be initialized by GUI
+2025-09-03 15:00:57,838 - INFO - API configuration will be handled by GUI
+2025-09-03 15:00:58,178 - INFO - Application started successfully
+2025-09-03 15:01:12,345 - ERROR - Login error: no such column: first_name
+2025-09-03 15:02:22,087 - INFO - Application interrupted by user
+2025-09-03 15:02:22,088 - INFO - Application shutdown
+2025-09-03 15:02:42,948 - INFO - Starting Konsultabot v2.0.0
+2025-09-03 15:02:42,951 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 15:02:42,951 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 15:02:42,952 - INFO - Database will be initialized by GUI
+2025-09-03 15:02:42,952 - INFO - API configuration will be handled by GUI
+2025-09-03 15:02:43,312 - INFO - Application started successfully
+2025-09-03 15:03:00,551 - WARNING - Failed login attempt for: Ace@evsu.edu.ph
+2025-09-03 15:03:51,651 - ERROR - Registration error: DatabaseManager.register_user() takes from 5 to 7 positional arguments but 8 were given
+2025-09-03 15:03:56,002 - ERROR - Registration error: DatabaseManager.register_user() takes from 5 to 7 positional arguments but 8 were given
+2025-09-03 15:05:34,486 - INFO - Starting Konsultabot v2.0.0
+2025-09-03 15:05:34,488 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 15:05:34,488 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 15:05:34,489 - INFO - Database will be initialized by GUI
+2025-09-03 15:05:34,490 - INFO - API configuration will be handled by GUI
+2025-09-03 15:05:34,866 - INFO - Application started successfully
+2025-09-03 15:06:22,634 - WARNING - Registration failed for Ace@gmail.com: Only EVSU email addresses are allowed
+2025-09-03 15:06:35,910 - INFO - User registered successfully: Ace@evsu.edu.ph
+2025-09-03 15:06:56,600 - WARNING - Failed login attempt for: Ace@evsu.edu.ph
+2025-09-03 15:07:04,869 - WARNING - Failed login attempt for: Ace@evsu.edu.ph
+2025-09-03 15:07:08,968 - WARNING - Failed login attempt for: ace@evsu.edu.ph
+2025-09-03 15:07:19,402 - WARNING - Failed login attempt for: Ace@evsu.edu.ph
+2025-09-03 15:07:24,689 - WARNING - Failed login attempt for: Ace@evsu.edu.ph
+2025-09-03 15:09:04,202 - INFO - User registered successfully: Brent@evsu.edu.ph
+2025-09-03 15:09:11,990 - WARNING - Failed login attempt for: Brent@evsu.edu.ph
+2025-09-03 15:09:18,802 - WARNING - Failed login attempt for: Brent@evsu.edu.ph
+2025-09-03 15:10:06,328 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 15:10:06,330 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 15:10:06,330 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 15:10:06,414 - INFO - Database initialized successfully
+2025-09-03 15:10:08,937 - INFO - Application started successfully
+2025-09-03 15:10:25,098 - WARNING - Failed login attempt for: Brent@evsu.edu.ph
+2025-09-03 15:11:54,617 - INFO - Starting Konsultabot v1.0.0
+2025-09-03 15:11:54,618 - WARNING - Missing optional dependencies: nltk, speech_recognition, pyttsx3, google-generativeai
+2025-09-03 15:11:54,619 - WARNING - Some features may be limited. Install missing packages for full functionality.
+2025-09-03 15:11:54,711 - INFO - Database initialized successfully
+2025-09-03 15:11:57,492 - INFO - Application started successfully
+2025-09-03 15:12:16,923 - WARNING - Failed login attempt for: Brent@evsu.edu.ph
+2025-09-03 15:17:15,539 - INFO - Starting Modern Konsultabot...
+2025-09-03 15:17:15,554 - ERROR - Application startup error: unexpected character after line continuation character (modern_gui.py, line 203)
+2025-09-03 15:17:15,555 - INFO - Application shutdown
+2025-09-03 15:18:02,958 - INFO - Starting Modern Konsultabot...
+2025-09-03 15:18:03,059 - ERROR - Import error: No module named 'requests'
+2025-09-03 15:18:03,060 - INFO - Application shutdown
+2025-09-03 15:18:59,505 - INFO - Starting Modern Konsultabot...
+2025-09-03 15:18:59,635 - WARNING - Google AI not available - using offline responses only
+2025-09-03 15:18:59,704 - WARNING - pyttsx3 not available - text-to-speech disabled
+2025-09-03 15:18:59,874 - INFO - Session loaded for user: Ace
+2025-09-03 15:19:14,530 - INFO - User logged out
+2025-09-03 15:19:36,463 - WARNING - Failed login attempt for: Ace@evsu.edu.ph
+2025-09-03 15:19:43,311 - WARNING - Failed login attempt for: Ace@evsu.edu.ph
+2025-09-03 15:19:52,392 - WARNING - Failed login attempt for: Brent@evsu.edu.ph
+2025-09-03 15:20:51,015 - INFO - User registered successfully: Kaloyy@evsu.edu.ph
+2025-09-03 15:21:09,384 - INFO - User logged in successfully: Kaloyy@evsu.edu.ph
+2025-09-03 15:21:17,256 - INFO - Application shutdown
+2025-09-03 15:32:51,768 - INFO - Starting Jarvis-style Konsultabot...
+2025-09-03 15:32:51,770 - ERROR - Import error: No module named 'jarvis_gui'
+2025-09-03 15:32:51,772 - INFO - Application shutdown
+2025-09-03 15:33:11,986 - INFO - Starting Jarvis-style Konsultabot...
+2025-09-03 15:33:11,987 - ERROR - Import error: No module named 'jarvis_gui'
+2025-09-03 15:33:11,988 - INFO - Application shutdown
+2025-09-03 15:36:38,478 - INFO - Starting Modern Konsultabot...
+2025-09-03 15:36:38,630 - WARNING - Google AI not available - using offline responses only
+2025-09-03 15:36:38,745 - WARNING - pyttsx3 not available - text-to-speech disabled
+2025-09-03 15:36:38,984 - INFO - Session loaded for user: Kaloy Cabaobao
+2025-09-03 15:37:35,651 - INFO - Application shutdown

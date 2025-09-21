@@ -1,0 +1,754 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2960
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3011
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 196
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/users/login/ HTTP/1.1" 200 382
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/users/login/ HTTP/1.1" 200 382
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+Bad Request: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 400 46
+Bad Request: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 400 46
+"POST /api/users/logout/ HTTP/1.1" 200 31
+Bad Request: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 400 141
+Watching for file changes with StatReloader
+Bad Request: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 400 141
+Bad Request: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 400 141
+Bad Request: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 400 60
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\users\serializers.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\users\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\serializers.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/register/ HTTP/1.1" 201 400
+"POST /api/chat/send/ HTTP/1.1" 200 263
+"POST /api/chat/send/ HTTP/1.1" 200 314
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 314
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 598
+"POST /api/chat/send/ HTTP/1.1" 200 564
+"POST /api/chat/send/ HTTP/1.1" 200 564
+"POST /api/chat/send/ HTTP/1.1" 200 542
+"POST /api/chat/send/ HTTP/1.1" 200 494
+"POST /api/chat/send/ HTTP/1.1" 200 580
+"POST /api/chat/send/ HTTP/1.1" 200 573
+"POST /api/chat/send/ HTTP/1.1" 200 556
+"POST /api/chat/send/ HTTP/1.1" 200 261
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 560
+"POST /api/chat/send/ HTTP/1.1" 200 556
+"POST /api/chat/send/ HTTP/1.1" 200 572
+"POST /api/chat/send/ HTTP/1.1" 200 572
+"POST /api/chat/send/ HTTP/1.1" 200 573
+"POST /api/chat/send/ HTTP/1.1" 200 580
+"POST /api/chat/send/ HTTP/1.1" 200 560
+"POST /api/chat/send/ HTTP/1.1" 200 507
+"POST /api/chat/send/ HTTP/1.1" 200 559
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 598
+"POST /api/chat/send/ HTTP/1.1" 200 262
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"GET / HTTP/1.1" 200 196
+"GET /api/ HTTP/1.1" 200 196
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 563
+"POST /api/chat/send/ HTTP/1.1" 200 560
+"POST /api/chat/send/ HTTP/1.1" 200 554
+"POST /api/chat/send/ HTTP/1.1" 200 491
+"POST /api/chat/send/ HTTP/1.1" 200 263
+"POST /api/chat/send/ HTTP/1.1" 200 302
+"POST /api/chat/send/ HTTP/1.1" 200 302
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 598
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"OPTIONS /api/users/login/ HTTP/1.1" 200 0
+"POST /api/users/login/ HTTP/1.1" 200 393
+"OPTIONS /api/chat/send/ HTTP/1.1" 200 0
+"POST /api/chat/send/ HTTP/1.1" 200 302
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 598
+"POST /api/chat/send/ HTTP/1.1" 200 281
+"POST /api/chat/send/ HTTP/1.1" 200 259
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 219
+"POST /api/chat/send/ HTTP/1.1" 200 257
+"POST /api/chat/send/ HTTP/1.1" 200 398
+"POST /api/chat/send/ HTTP/1.1" 200 380
+"POST /api/chat/send/ HTTP/1.1" 200 415
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 491
+"POST /api/chat/send/ HTTP/1.1" 200 301
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 301
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 581
+"POST /api/chat/send/ HTTP/1.1" 200 563
+"POST /api/chat/send/ HTTP/1.1" 200 362
+"POST /api/chat/send/ HTTP/1.1" 200 556
+"POST /api/chat/send/ HTTP/1.1" 200 488
+"POST /api/chat/send/ HTTP/1.1" 200 543
+"POST /api/chat/send/ HTTP/1.1" 200 260
+"POST /api/chat/send/ HTTP/1.1" 200 249
+"POST /api/chat/send/ HTTP/1.1" 200 278
+"POST /api/chat/send/ HTTP/1.1" 200 300
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 219
+"POST /api/chat/send/ HTTP/1.1" 200 257
+"POST /api/chat/send/ HTTP/1.1" 200 398
+"POST /api/chat/send/ HTTP/1.1" 200 400
+"POST /api/chat/send/ HTTP/1.1" 200 414
+"POST /api/chat/send/ HTTP/1.1" 200 362
+"POST /api/chat/send/ HTTP/1.1" 200 492
+"POST /api/chat/send/ HTTP/1.1" 200 301
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 301
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 581
+"POST /api/chat/send/ HTTP/1.1" 200 564
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 551
+"POST /api/chat/send/ HTTP/1.1" 200 492
+"POST /api/chat/send/ HTTP/1.1" 200 542
+"POST /api/chat/send/ HTTP/1.1" 200 260
+"POST /api/chat/send/ HTTP/1.1" 200 251
+"POST /api/chat/send/ HTTP/1.1" 200 278
+"POST /api/chat/send/ HTTP/1.1" 200 301
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 380
+"POST /api/chat/send/ HTTP/1.1" 200 385
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 220
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"POST /api/chat/send/ HTTP/1.1" 200 302
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 580
+"POST /api/chat/send/ HTTP/1.1" 200 599
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 703
+"POST /api/chat/send/ HTTP/1.1" 200 712
+"POST /api/chat/send/ HTTP/1.1" 200 492
+"POST /api/chat/send/ HTTP/1.1" 200 598
+"POST /api/chat/send/ HTTP/1.1" 200 362
+"POST /api/chat/send/ HTTP/1.1" 200 220
+"POST /api/chat/send/ HTTP/1.1" 200 257
+"POST /api/chat/send/ HTTP/1.1" 200 398
+"POST /api/chat/send/ HTTP/1.1" 200 414
+"POST /api/chat/send/ HTTP/1.1" 200 598
+"POST /api/chat/send/ HTTP/1.1" 200 563
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 543
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 696
+"POST /api/chat/send/ HTTP/1.1" 200 712
+"POST /api/chat/send/ HTTP/1.1" 200 492
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 219
+"POST /api/chat/send/ HTTP/1.1" 200 256
+"POST /api/chat/send/ HTTP/1.1" 200 380
+"POST /api/chat/send/ HTTP/1.1" 200 414
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 564
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 542
+"GET / HTTP/1.1" 200 196
+"GET /api/ HTTP/1.1" 200 196
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 564
+"POST /api/chat/send/ HTTP/1.1" 200 362
+"POST /api/chat/send/ HTTP/1.1" 200 556
+"POST /api/chat/send/ HTTP/1.1" 200 491
+"POST /api/chat/send/ HTTP/1.1" 200 661
+"POST /api/chat/send/ HTTP/1.1" 200 659
+"POST /api/chat/send/ HTTP/1.1" 200 668
+"POST /api/chat/send/ HTTP/1.1" 200 654
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 598
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 220
+"POST /api/chat/send/ HTTP/1.1" 200 256
+"POST /api/chat/send/ HTTP/1.1" 200 398
+"POST /api/chat/send/ HTTP/1.1" 200 380
+"POST /api/chat/send/ HTTP/1.1" 200 414
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 492
+"POST /api/chat/send/ HTTP/1.1" 200 682
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 698
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 581
+"POST /api/chat/send/ HTTP/1.1" 200 563
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/chat/send/ HTTP/1.1" 200 556
+"POST /api/chat/send/ HTTP/1.1" 200 492
+"POST /api/chat/send/ HTTP/1.1" 200 543
+"POST /api/chat/send/ HTTP/1.1" 200 660
+"POST /api/chat/send/ HTTP/1.1" 200 656
+"POST /api/chat/send/ HTTP/1.1" 200 654
+"POST /api/chat/send/ HTTP/1.1" 200 657
+"GET / HTTP/1.1" 200 196
+"GET /api/ HTTP/1.1" 200 196
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 661
+"POST /api/chat/send/ HTTP/1.1" 200 219
+"POST /api/chat/send/ HTTP/1.1" 200 599
+"POST /api/chat/send/ HTTP/1.1" 200 398
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 648
+"POST /api/chat/send/ HTTP/1.1" 200 670
+"OPTIONS /api/users/login/ HTTP/1.1" 200 0
+"POST /api/users/login/ HTTP/1.1" 200 393
+"OPTIONS /api/chat/send/ HTTP/1.1" 200 0
+"POST /api/chat/send/ HTTP/1.1" 200 648
+"POST /api/chat/send/ HTTP/1.1" 200 667
+"POST /api/chat/send/ HTTP/1.1" 200 599
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 360
+"POST /api/chat/send/ HTTP/1.1" 200 866
+"POST /api/chat/send/ HTTP/1.1" 200 219
+Error processing message: name 'TECHNICAL_PROBLEMS' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 90
+"OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 360
+"POST /api/chat/send/ HTTP/1.1" 200 874
+Error processing message: name 'TECHNICAL_PROBLEMS' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 90
+Error processing message: name 'TECHNICAL_PROBLEMS' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 90
+Error processing message: name 'TECHNICAL_PROBLEMS' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 90
+Watching for file changes with StatReloader
+"OPTIONS /api/users/login/ HTTP/1.1" 200 0
+"POST /api/users/login/ HTTP/1.1" 200 393
+"OPTIONS /api/chat/send/ HTTP/1.1" 200 0
+"POST /api/chat/send/ HTTP/1.1" 200 866
+Error processing message: name 'TECHNICAL_PROBLEMS' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 90
+Error processing message: name 'TECHNICAL_PROBLEMS' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 90
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 361
+"POST /api/chat/send/ HTTP/1.1" 200 359
+"POST /api/chat/send/ HTTP/1.1" 200 320
+"POST /api/chat/send/ HTTP/1.1" 200 866
+"POST /api/chat/send/ HTTP/1.1" 200 302
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 609
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"POST /api/chat/send/ HTTP/1.1" 200 320
+"OPTIONS /api/users/login/ HTTP/1.1" 200 0
+"POST /api/users/login/ HTTP/1.1" 200 393
+"OPTIONS /api/chat/send/ HTTP/1.1" 200 0
+"POST /api/chat/send/ HTTP/1.1" 200 335
+"POST /api/chat/send/ HTTP/1.1" 200 320
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1371
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 776
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 902
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1012
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 362
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1404
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 363
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 362
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 540
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1351
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 361
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 257
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1261
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1361
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 362
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 304
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"POST /api/users/login/ HTTP/1.1" 200 382
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+Watching for file changes with StatReloader
+"OPTIONS /api/users/login/ HTTP/1.1" 200 0
+"POST /api/users/login/ HTTP/1.1" 200 393
+"OPTIONS /api/chat/send/ HTTP/1.1" 200 0
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+"GET /api/users/profile/ HTTP/1.1" 200 304
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+Error processing message: name 'get_technical_solution' is not defined
+Internal Server Error: /api/chat/send/
+"POST /api/chat/send/ HTTP/1.1" 500 94
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 360
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 360
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\konsultabot_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 328
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"POST /api/chat/send/ HTTP/1.1" 200 305
+"OPTIONS /api/users/login/ HTTP/1.1" 200 0
+"POST /api/users/login/ HTTP/1.1" 200 393
+"OPTIONS /api/chat/send/ HTTP/1.1" 200 0
+"POST /api/chat/send/ HTTP/1.1" 200 334
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 334
+"POST /api/chat/send/ HTTP/1.1" 200 1379
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"POST /api/chat/send/ HTTP/1.1" 200 329
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 304
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 320
+"POST /api/chat/send/ HTTP/1.1" 200 334
+"POST /api/chat/send/ HTTP/1.1" 200 320
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 792
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1909
+"POST /api/chat/send/ HTTP/1.1" 200 1909
+"POST /api/chat/send/ HTTP/1.1" 200 1909
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 792
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/users/login/ HTTP/1.1" 200 382
+"POST /api/chat/send/ HTTP/1.1" 200 1909
+"POST /api/chat/send/ HTTP/1.1" 200 1909
+"POST /api/chat/send/ HTTP/1.1" 200 1909
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 792
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\Project\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /?vscodeBrowserReqId=1758350018125 HTTP/1.1" 200 196
+C:\Users\Ace Ziegfred Culapas\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/auth/
+"GET /api/auth/ HTTP/1.1" 404 2829
+"GET /?vscodeBrowserReqId=1758350391804 HTTP/1.1" 200 196
+"GET /api/ HTTP/1.1" 200 196
+"OPTIONS /api/users/login/ HTTP/1.1" 200 0
+"POST /api/users/login/ HTTP/1.1" 200 393
+"OPTIONS /api/chat/send/ HTTP/1.1" 200 0
+"POST /api/chat/send/ HTTP/1.1" 200 360
+"POST /api/chat/send/ HTTP/1.1" 200 334
+"POST /api/chat/send/ HTTP/1.1" 200 219
+"POST /api/chat/send/ HTTP/1.1" 200 357
+"POST /api/chat/send/ HTTP/1.1" 200 913
+"POST /api/chat/send/ HTTP/1.1" 200 303
+"OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+"GET /api/users/profile/ HTTP/1.1" 200 304
+"POST /api/chat/send/ HTTP/1.1" 200 304
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\language_processor.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\language_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\utility_functions.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\utility_functions.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\views.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\technical_knowledge.py changed, reloading.
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Ace Ziegfred Culapas\CascadeProjects\CapProj\backend\chat\technical_knowledge.py changed, reloading.
+Watching for file changes with StatReloader
